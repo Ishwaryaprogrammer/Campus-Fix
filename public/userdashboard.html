@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Management</title>
+  <link rel="stylesheet" href="userdash.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="admin-profile">
+        <img src="../image/elder.png" alt="Profile">
+        <h2 id="username">Loading...</h2>
+        <p id="email">Loading...</p>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Report Management</h1>
+      <button id="add-report-btn">Add Report</button>
+    </header>
+
+    <main>
+      <section id="report-section">
+        <h2>Reports</h2>
+        <div id="report-list"></div> <!-- Container for report cards -->
+      </section>
+    </main>
+
+    <!-- Report Modal -->
+    <div id="report-modal">
+      <div class="modal-content">
+        <form id="report-form">
+          <h2>Add Report</h2>
+          <label for="report-title">Title:</label>
+          <input type="text" id="report-title" name="title" required>
+
+          <label for="report-description">Description:</label>
+          <textarea id="report-description" name="description" required></textarea>
+
+          <label for="report-location">Location:</label>
+          <input type="text" id="report-location" name="location" required>
+
+          <label for="report-category">Category:</label>
+          <select id="report-category" name="category">
+            <option value="Maintenance Issue">Maintenance Issue</option>
+            <option value="Breakage">Breakage</option>
+            <option value="Lost">Lost</option>
+          </select>
+
+          <button type="submit">Add Report</button>
+          <button type="button" id="close-report-modal">Close</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="userscript.js"></script> <!-- Include the JavaScript for handling the functionality -->
+</body>
+</html>

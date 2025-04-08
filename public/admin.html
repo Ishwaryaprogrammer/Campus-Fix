@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Report Management</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="admin-profile">
+        <img src="../image/admin.png" alt="Profile">
+        <h2 id="username">Loading...</h2>
+        <p id="email">Loading...</p>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Report Management</h1>
+    </header>
+
+    <main>
+      <!-- Filter Section -->
+      <section id="filter-section">
+        <label for="filter-category">Filter by Category:</label>
+        <select id="filter-category" name="category">
+          <option value="">All Categories</option>
+          <option value="Maintenance Issue">Maintenance Issue</option>
+          <option value="Breakage">Breakage</option>
+          <option value="Lost">Lost</option>
+        </select>
+
+        <label for="filter-status">Filter by Status:</label>
+        <select id="filter-status" name="status">
+          <option value="">All Statuses</option>
+          <option value="Pending">Pending</option>
+          <option value="Resolved">Resolved</option>
+        </select>
+      </section>
+
+      <section id="report-section">
+        <h2>Reports</h2>
+        <div id="report-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

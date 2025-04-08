@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFix</title>
+    <link rel="icon" href="image/icon-medtech.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="https://github.com/Ishwaryaprogrammer" class="logo"> <i class="fas fa-wrench"></i>
+            CampusFix</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#login">login</a>
+            <a href="#signup">signup</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="image">
+            <img src="image/fix.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Welcome!</h3>
+            <p>Lost track of campus issues? Don’t worry, we’ve got you!  
+                From quick issue reporting to real-time status updates, notifications, and easy tracking, CampusFix keeps your campus running smoothly. Stay stress-free while we handle the fixes! 🚀</p>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+  <!-- Signup Section
+<section class="signup" id="signup">
+    <h1 class="heading"> <span>Signup</span> </h1>
+    <div class="row">
+
+        <div class="image">
+            
+            <img src="image/book-img.svg" alt="">
+        </div>
+    <form id="signupForm" class="form-style">
+      <input type="text" id="username" placeholder="Username" class="box" required>
+      <input type="phonenumber" id="phonenumber" placeholder="PhoneNumber" class="box" required>
+      <input type="emergencycontact" id="emergencycontact" placeholder="EmergencyContact" class="box" required>
+      <input type="email" id="email" placeholder="Email" class="box" required>
+      <input type="password" id="password" placeholder="Password" class="box" required>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    </div>
+</section> -->
+<!-- Login Section 
+<section class="login" id="login">
+    <h1 class="heading"> <span>Login</span> </h1>
+    <div class="row">
+
+        <div class="image">
+            <img src="image/home-img.svg" alt="">
+        </div>
+    <form id="loginForm" class="form-style">
+      <input type="email" id="loginEmail" placeholder="Email" class="box" required>
+      <input type="password" id="loginPassword" placeholder="Password" class="box" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    </div>
+</section>-->
+<section class="signup" id="signup">
+    <h1 class="heading"> <span>Signup</span> </h1>
+    <div class="row">
+        <div class="image">
+            <img src="image/fixyy.png" alt="">
+        </div>
+        <form id="signupForm" class="form-style">
+            <select id="role" class="box" required>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <input type="text" id="username" placeholder="Username" class="box" required>
+            <input type="text" id="phonenumber" placeholder="Phone Number" class="box" required>
+            <input type="email" id="email" placeholder="Email" class="box" required>
+            <input type="password" id="password" placeholder="Password" class="box" required>
+            <input type="password" id="adminPassword" placeholder="Admin Access Code" class="box" style="display:none;">
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+</section>
+<script>
+    document.getElementById("role").addEventListener("change", function () {
+      const adminField = document.getElementById("adminAccessField");
+      adminField.style.display = this.value === "admin" ? "block" : "none";
+    });
+  </script>
+
+<!-- Login Section -->
+<section class="login" id="login">
+    <h1 class="heading"> <span>Login</span> </h1>
+    <div class="row">
+        <div class="image">
+            <img src="image/fixyy.png" alt="">
+        </div>
+        <form id="loginForm" class="form-style">
+            <input type="email" id="loginEmail" placeholder="Email" class="box" required>
+            <input type="password" id="loginPassword" placeholder="Password" class="box" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</section>
+
+    <!-- blogs section starts  -->
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-chevron-right"></i> home </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a><i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a><i class="fas fa-phone"></i> +91 7695960911 </a>
+                <a><i class="fas fa-phone"></i> +91 6374051605 </a>
+                <a href="mailto:ishwaryasuresh2004@gmail.com"> <i class="fas fa-envelope"></i>campusfixtech@gmail.com</a>
+                <a href="mailto:ishwaryasuresh2004@gmail.com"> <i class="fas fa-envelope"></i>customercare@gmail.com</a>
+                <a href="https://maps.app.goo.gl/6pvQ5cqYNmw9sp5ZA"> <i class="fas fa-map-marker-alt"></i> Tamil Nadu, India </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://facebook.com/"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="https://twitter.com/"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="https://instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="https://id.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>CampusFix Team</span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    
+  <script src="public/script.js"></script>
+
+ 
+
+</body>
+
+</html>

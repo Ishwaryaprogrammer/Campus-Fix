@@ -1,0 +1,27 @@
+{
+  "name": "sos",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "googleapis": "^144.0.0",
+    "mongoose": "^8.9.2",
+    "node-schedule": "^2.1.1",
+    "python-shell": "^5.0.0",
+    "readline-sync": "^1.4.10",
+    "twilio": "^5.4.0"
+  },
+  "description": ""
+}
